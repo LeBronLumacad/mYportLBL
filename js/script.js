@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
-    // Get elements
+    //  elements
     const interestCards = document.querySelectorAll('.interest-card');
     const interestDisplay = document.getElementById('interestDisplay');
     const interestContent = document.getElementById('interestContent');
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.getElementById('closeInterestDisplay');
     const placeholder = document.querySelector('.interest-display-placeholder');
 
-    // Function to display images for an interest
+    // display images 
     function displayInterest(interestKey) {
         const data = interestData[interestKey];
         if (!data) return;
