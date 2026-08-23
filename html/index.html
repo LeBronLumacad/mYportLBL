@@ -9,11 +9,12 @@
 </head>
 <body>
 
- 
+  <!-- Background Animation -->
   <div class="bg-animation"></div>
 
   <div class="container">
    
+    <!-- HERO SECTION -->
     <div class="hero">
       <div class="hero-text">
         <div class="greeting">👋 Hey there, I'm</div>
@@ -21,12 +22,15 @@
         <div class="typing-wrapper">
           <span class="typing-text">IT Student &amp; Visionary</span>
         </div>
+        <p class="motto">
+          "In a world full of numbers, I'd be Alphabet."
+        </p>
         <p class="tagline">
           <i class="fas fa-map-pin"></i> Cebu, Philippines · 
           <span class="badge"><i class="fas fa-rocket"></i> #futuredev</span>
         </p>
         <div class="search-area">
-          <input type="text" placeholder="🔍  Explore my world...">
+          <input type="text" placeholder="🔍 Explore my world...">
           <button><i class="fas fa-paper-plane"></i> Go</button>
         </div>
         <div class="social-links">
@@ -47,7 +51,7 @@
       </div>
     </div>
 
-    
+    <!-- ABOUT SECTION -->
     <section id="about" class="section">
       <div class="section-header">
         <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
@@ -55,7 +59,7 @@
       </div>
       <div class="about-wrap">
         <div class="about-image-wrapper">
-          <img src="../images/leb.jpg" alt="LeBron James" onerror="this.src='https://i.pravatar.cc/300?img=11';">
+          <img src="../images/leb.jpg" alt="Le Bron B. Lumacad" onerror="this.src='https://i.pravatar.cc/300?img=11';">
           <div class="floating-badge experience">2+ Years</div>
         </div>
         <div class="about-content">
@@ -66,8 +70,8 @@
           </p>
           <div class="about-stats">
             <div class="stat">
-
-              
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Projects</span>
             </div>
             <div class="stat">
               <span class="stat-number">2+</span>
@@ -87,7 +91,7 @@
       </div>
     </section>
 
-    
+    <!-- SKILLS & HOBBIES GRID -->
     <div class="grid-2">
       <div class="card skill-card">
         <div class="card-icon"><i class="fas fa-cogs"></i></div>
@@ -124,9 +128,7 @@
       </div>
     </div>
 
-     
-    
-          <!-- INTERESTS SECTION - COMPACT ICON VERSION -->
+    <!-- INTERESTS SECTION -->
     <section class="section interests-section">
       <div class="section-header">
         <h2><i class="fas fa-star"></i> My Interests</h2>
@@ -177,7 +179,7 @@
         </div>
       </div>
 
-      <!-- Interest Display Area - No placeholder text -->
+      <!-- Interest Display Area -->
       <div class="interest-display" id="interestDisplay">
         <div class="interest-display-content" id="interestContent" style="display: none;">
           <div class="interest-display-header">
@@ -192,17 +194,16 @@
         </div>
       </div>
     </section>
-    <!-- END INTERESTS SECTION -->
 
-    <!-- Fun Facts -->
+    <!-- FUN FACTS -->
     <div class="fun-facts">
       <div class="fun-fact">
         <i class="fas fa-coffee"></i>
-        <span>late night sleeper</span>
+        <span>Late night sleeper</span>
       </div>
       <div class="fun-fact">
         <i class="fas fa-laptop-code"></i>
-        <span>Less than 3 projects</span>
+        <span>2+ projects</span>
       </div>
       <div class="fun-fact">
         <i class="fas fa-globe-asia"></i>
@@ -210,77 +211,61 @@
       </div>
       <div class="fun-fact">
         <i class="fas fa-moon"></i>
-        <span>night owl</span>
+        <span>Night owl</span>
       </div>
       <div class="fun-fact">
         <i class="fas fa-pizza-slice"></i>
-        <span>pizza enthusiast</span>
+        <span>Pizza enthusiast</span>
       </div>
     </div>
 
-<section class="section">
-  <div class="section-header">
-    <h2><i class="fas fa-code-branch"></i> Projects</h2>
-    <div class="section-line"></div>
-  </div>
-  <div class="projects-grid">
-    <div class="project-card">
-      <div class="project-image" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
-        <i class="fas fa-shopping-cart"></i>
+    <!-- PROJECTS SECTION -->
+    <section class="section">
+      <div class="section-header">
+        <h2><i class="fas fa-code-branch"></i> Projects</h2>
+        <div class="section-line"></div>
       </div>
-      <div class="project-content">
-        <h4>Barangay System</h4>
-        <p>Full-stack application for managing barangay services and information</p>
-        <div class="project-tech">
-          <span>React</span>
-          <span>Node.js</span>
-          <span>MongoDB</span>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="project-content">
+            <h4>Barangay System</h4>
+            <p>Full-stack application for managing barangay services and information</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
         </div>
-        <div class="project-links">
-          <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-image" style="background: linear-gradient(135deg, #4ecdc4, #44b39d);">
-        <i class="fas fa-chart-line"></i>
-      </div>
-      <div class="project-content">
-        <h4>Sirene_KTV website</h4>
-        <p>Website made for online booking of KTV services</p>
-        <div class="project-tech">
-          <span>Python</span>
-          <span>Django</span>
-          <span>D3.js</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-image" style="background: linear-gradient(135deg, #ff9f43, #f0932b);">
-        <i class="fas fa-mobile-alt"></i>
-      </div>
-      <div class="project-content">
-        <h4>Portfolio Website</h4>
-        <p>Minimalist portfolio website to showcase projects and skills</p>
-        <div class="project-tech">
-          <span>JavaScript</span>
-          <span>APIs</span>
-          <span>CSS3</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-          <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #4ecdc4, #44b39d);">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="project-content">
+            <h4>Sirene_KTV Website</h4>
+            <p>Website made for online booking of KTV services</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Django</span>
+              <span>D3.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-    
+    </section>
+
+    <!-- CONTACT SECTION -->
     <section id="contact" class="section">
       <div class="section-header">
         <h2><i class="fas fa-paper-plane"></i> Get In Touch</h2>
@@ -290,7 +275,9 @@
         <div class="contact-info">
           <div class="contact-item">
             <i class="fas fa-envelope"></i>
-            <a href="mailto:lumacadlbl@gmail.com" class="email-link">lumacadlbl@gmail.com</a>
+            <a href="mailto:lumacadlbl@gmail.com" class="email-link">
+              lumacadlbl@gmail.com
+            </a>
           </div>
           <div class="contact-item">
             <i class="fas fa-phone-alt"></i>
@@ -301,6 +288,18 @@
             <span>Cebu, Philippines</span>
           </div>
         </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <input type="text" placeholder="Subject">
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+
         <div class="contact-social">
           <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
           <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
@@ -311,19 +310,19 @@
       </div>
     </section>
 
-    
+    <!-- FOOTER -->
     <footer>
       <div class="footer-content">
         <span><i class="fas fa-crown"></i> Le Bron · 2026</span>
         <span class="footer-quote">
-          <i class="fas fa-meteor"></i> “Kapoya nimo” — but worth it.
+          <i class="fas fa-meteor"></i> "Kapoya nimo" — but worth it.
         </span>
         <span class="footer-emoji">✨</span>
       </div>
     </footer>
   </div>
 
-  <!-- Add JavaScript -->
+  <!-- JavaScript -->
   <script src="../js/script.js"></script>
 </body>
 </html>
