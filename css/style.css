@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
@@ -247,9 +246,7 @@ h2 i {
   height: 200px;
   border-radius: 50%;
   padding: 4px;
-  background: linear-gradient(135deg, #38B6FF, #00BF63, #0CC0DF, #004AAD);
-  animation: spin 12s linear infinite;
-  box-shadow: 0 20px 60px rgba(56, 182, 255, 0.20);
+  background: linear-gradient(135deg, #38B6FF, #00BF63, #0CC0DF, #004AAD)
 }
 
 @keyframes spin {
@@ -1315,5 +1312,153 @@ footer {
 
   .stat-number {
     font-size: 1.4rem;
+  }
+}
+/* ===== FIXED HEADER / NAVIGATION ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(15, 26, 46, 0.92);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(56, 182, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .logo i {
+  color: #38B6FF;
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #7ED957;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  border: 1px solid transparent;
+}
+
+.nav-btn i {
+  font-size: 0.8rem;
+  color: #38B6FF;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: rgba(56, 182, 255, 0.08);
+  color: #FFFFFF;
+  border-color: rgba(56, 182, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.nav-btn:hover i {
+  color: #00BF63;
+}
+
+.nav-btn.active {
+  background: linear-gradient(135deg, rgba(0, 191, 99, 0.15), rgba(56, 182, 255, 0.10));
+  color: #FFFFFF;
+  border-color: rgba(56, 182, 255, 0.15);
+}
+
+.nav-btn.active i {
+  color: #00BF63;
+}
+
+/* ===== BODY PADDING FOR FIXED HEADER ===== */
+body {
+  padding-top: 76px;
+}
+
+/* ===== RESPONSIVE NAV ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1rem;
+  }
+  
+  .navbar .logo {
+    font-size: 1.1rem;
+  }
+  
+  .nav-links {
+    justify-content: center;
+    gap: 0.2rem;
+  }
+  
+  .nav-btn {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+  }
+  
+  .nav-btn i {
+    font-size: 0.7rem;
+  }
+  
+  body {
+    padding-top: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.4rem 0.6rem;
+    gap: 0.4rem;
+  }
+  
+  .navbar .logo {
+    font-size: 0.95rem;
+  }
+  
+  .nav-btn {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+    gap: 3px;
+  }
+  
+  .nav-btn i {
+    font-size: 0.6rem;
+  }
+  
+  body {
+    padding-top: 95px;
   }
 }
